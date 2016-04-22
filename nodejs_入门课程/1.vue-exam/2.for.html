@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+  /* 必需 */
+.expand-transition {
+  transition: all .3s ease;
+  height: 30px;
+  padding: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+/* .expand-enter 定义进入的开始状态 */
+/* .expand-leave 定义离开的结束状态 */
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
+
+</style>
+
+<script src="vue.js"></script>
+</head>
+<body style="font-size: 2em;">
+
+<div id="app">
+<h2>列表</h2>
+  <button @click="add" style="font-size: 1em;" >加一本书</button>
+  <button @click="reduce" style="font-size: 1em;" >减一本书</button>
+  <ul>
+    <li v-for="book in books"  transition="expand"  >
+      {{ book.name }}
+    </li>
+  </ul>
+  
+</div>
+
+<script>
+var book_array=[
+      { name: 'Learn JavaScript' },
+      { name: 'Learn Vue.js' },
+      { name: 'Build Something Awesome' }
+    ];
+
+var vm = new Vue({
+  el: '#app',
+  data: {
+    books: book_array
+  },
+  methods:{
+    add : function(){ 
+      this.books.push({ name: '我是一本新书' });
+      console.log(this.books);
+    },
+    reduce : function(){ 
+      this.books.splice(0,1); 
+      console.log(vm.books);
+      //console.log(book_array);
+    }
+  }
+});
+
+</script>
+</body>
+</html>
