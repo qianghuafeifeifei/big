@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#head{
+    width: 100%;
+    height: 700px;
+}
+#hesds{
+    width: 100%;
+    height: 113px;
+    background-image: url("../../images/bg2-1_03.png");
+}
+#hesds-1{
+    width: 100%;
+    height: 587px;
+    background-repeat: no-repeat;
+    background: url("images/bg1.jpg");
+    background-size: cover;
+
+}
+#hesds-1-1{
+    width: 180px;
+    height: 430px;
+    margin: 0px auto;
+}
+@font-face
+{
+    font-family: myFirstFont;
+    src:url(../maozedong.ttf);
+}
+#p-1{
+    font-family:myFirstFont;
+    font-size: 180px;
+    color: #00bad2;
+}
+#heads-2{
+    width: 1050px;
+    height: 50px;
+    margin: 107px auto;
+}
+#avrs a{
+    text-decoration: none;
+    font-family: Î¢ÈíÑÅºÚ;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+#avrs li{
+    float: left;
+}
+#avrs li .ul li{
+    float: none;
+}
+#avrs li a{
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#avrs li ul{
+    position: absolute;
+    top: 698px;
+    z-index: 3;
+}
+#avrs li .ul{
+    display: none;
+}
+#avrs li:hover .ul{
+    display: block;
+    background-color: plum;
+}
+a:hover{
+    background-color: aqua;
+}
+#main{
+    width: 1300px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+#mainleft{
+    width: 70px;
+    height: 600px;
+    background-color: green;
+    float: left;
+}
+#mainleftul li:hover{
+    background:url("images/bg3_02.png");
+}
+#mainleftul{
+    width:70px;
+    height: 600px;
+}
+#mainleftul li{
+    display: block;
+    font-family: myFirstFont;
+    font-size:40px;
+    text-align: center;
+    height: 200px;
+    cursor: pointer;
+}
+#mainright{
+    width: 1230px;
+    height: 600px;
+    float: left;
+}
+#mainrighta{
+    width: 1230px;
+    height: 600px;
+   display: block;
+    float: left;
+}
+#mainrightb{
+    width: 1230px;
+    height: 600px;
+    display: none;
+    float: left;
+}
+#mainrightc{
+    width: 1230px;
+    height: 600px;
+    display: none;
+    float: left;
+}
+#div1{width: 530px;height: 300px;border: 1px solid black;overflow: hidden;position: relative}
+#div1 ul{width: 1590px;height: 300px;position: absolute;}
+#div1 ul li{display: block;float: left}
+
+#div2{width:300px;height: 300px;border: 1px solid black;margin: -1px 0 0 0;
+    overflow: hidden;position: relative;}
+#div2 ul{width:900px;height: 300px;position: absolute;}
+#div2 ul li{display: block;float: left;}
+
+#div3{width: 400px;height: 300px;border:1px solid black;margin: -302px 0 0 302px;
+     overflow: hidden;position: relative;}
+#div3 ul{width: 1200px;height: 300px;position: absolute}
+#div3 ul li{display: block; float: left;}
+
+#div4{width:170px;height: 300px;border:1px solid black;margin: -604px 0 0 532px;
+     overflow: hidden;position: relative;}
+#div4 ul{width:510px;height: 300px;position: absolute;}
+#div4 ul li{display: block;float: left;}
+
+#div5{width: 530px;height: 601px;border:1px solid black;margin: -302px 0 0 703px;
+    overflow: hidden;position: relative;}
+#div5 ul{width: 1590px;height: 601px;position: absolute; }
+#div5 ul li{display: block;float: left}
+#div5left{width: 41px;height: 100px;overflow:hidden;position:absolute;top:40%;left: 1263px;}
+#div5right{width: 41px;height: 100px;overflow: hidden;position:absolute;top:40%;left: 70px;}
+
+#div6{width: 500px;height: 601px;border:1px solid black;position: relative;
+    overflow: hidden;}
+#div6 ul {width: 1500px;height: 601px;position: absolute;}
+#div6 ul li{display: block;float: left}
+
+#div7{width:300px;height: 300px;border:1px solid black;margin: -603px 0 0 502px;position: relative;
+      overflow: hidden;}
+#ul7{width:900px;height: 300px;position: absolute;}
+#ul7 li{display: block;float: left;}
+
+#div8{width: 400px;height: 300px;border:1px solid black;margin:-1px 0 0 502px;position: relative;
+     overflow: hidden;}
+#ul8{width: 1200px;height: 300px;position: absolute;}
+#ul8 li{display: block; float: left;}
+
+#div9{ width: 430px;height: 300px;border:1px solid black;margin:-604px 0 0 803px;position: relative;
+      overflow: hidden;}
+#ul9{width: 1290px;height: 300px;position: absolute;}
+#ul9 li{display: block;float: left;}
+
+#div10{width: 330px;height: 300px;border:1px solid black;margin:-1px 0 0 903px;position: relative;
+      overflow: hidden;}
+#ul10{width: 990px;height: 300px;position: absolute;}
+#ul10 li{display: block;float: left;}
+
+#div10left{width: 41px;height: 100px;overflow:hidden;position:absolute;top:40%;left: 1263px;}
+#div10right{width: 41px;height: 100px;overflow: hidden;position:absolute;top:40%;left: 70px;}
+
+#div11{width: 1230px; height: 600px;background: url("../images1/bg3.png");
+    background-size: 1230px 600px;  }
+#div12{width: 1100px;height: 500px;position: relative; top:-550px;left: 70px;overflow: hidden;}
+#div12 ul{width: 3300px;height: 500px;position:absolute;}
+#ul12 li{display: block;float: left;}
+#div13{width: 41px;height: 100px;overflow:hidden;position:absolute;top:40%;left: 1260px;}
+#div14{width: 41px;height: 100px;overflow: hidden;position:absolute;top:40%;left: 70px;}
+#mainturn{width: 1304px;height: 200px;background-color: #00bad2;margin-top: 10px;
+        margin-left: 50px;overflow: hidden;}
+#mainturn ul{width:2000px;height: 200px }
+#mainturn ul li{display: block;float: left;margin-left: 5px;width: 400px; height: 200px;}
