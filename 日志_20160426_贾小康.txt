@@ -1,0 +1,10 @@
+工作内容
+上午:nodejs与mysql的学习
+下午:听陈延东将nodejs与mysql交互
+遇到/解决问题
+前端页面的功能 以解决
+nodejs读出mysql数据  未解决
+工作评价
+完成部分任务，理解了nodejs读出mysql数据大体，没有实现读出
+工作任务
+nodejs与数据库实现交互,nodejs读出mysql数据，在html中呈现出来
