@@ -1,0 +1,9 @@
+工作内容
+上午:完善相册项目
+下午:讲解vue.js,node.js,ajax,mysql如何在htmld显示，学习图片上传
+遇到/解决问题
+vue.js,node.js,ajax,mysql如何在htmld显示 　图片上传　　　未解决
+工作评价
+没有完成任务
+工作任务
+完成vue.js,node.js,ajax,mysql如何在htmld显示以及图片上传
