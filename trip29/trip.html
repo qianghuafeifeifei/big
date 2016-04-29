@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旅途相册</title>
+    <link href="trip.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/trip.js"></script>
+    <script src="../js/vue.js"></script>
+    <script src="../js/jquery-2.2.2.js"></script>
+    <script src="vue.js"></script>
+    <script src="jquery-2.2.2.js"></script>
+    <style>
+        #medical{border: 2px solid white ; width: 800px;height: 50px;background-color: #7C7C6C;line-height: 50px;text-align: center;border-radius: 100%;position: relative; margin: auto;top: 30px;}
+        #put{width: 100px;height: 20px;margin: 0px auto;border-radius: 10px;}
+        span{width: 250px;height: 30px;border: 2px solid black;border-top-right-radius: 10px;border-bottom-right-radius: 10px;}
+        #pass{width: 100px;height: 20px;margin: 0px auto;border-radius: 10px;position: relative;left: 6px;}
+        #onclick{width: 100px;height: 25px;background-color: chocolate;font-weight: bold;color:white;}
+        input{width: 250px;height: 25px;}
+    </style>
+</head>
+<body>
+<div id="head">
+    <div id="hesds">
+    </div>
+    <div id="hesds-1">
+        <div id="hesds-1-1" >
+            <a id="p-1" href="#mainright">木子</a>
+        </div>
+        <div id="heads-2">
+            <ul id="avrs">
+                <li><a href="../../index.html">首页</a>
+                    <ul class="ul">
+                        <li><a href="#">生平简介</a> </li>
+                        <li><a href="#">喜好分享</a> </li>
+                        <li><a href="#">个人历程</a> </li>
+                    </ul>
+                </li>
+                <li><a href="../../music/music.html">酷我音乐</a>
+                    <ul class="ul">
+                        <li><a href="#">伤感区</a> </li>
+                        <li><a href="#">欢快区</a> </li>
+                        <li><a href="#">幽静区</a> </li>
+                        <li><a href="#">思考区</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">舒心视频</a>
+                    <ul class="ul">
+                        <li><a href="#">动漫天地</a> </li>
+                        <li><a href="#">电视剧</a> </li>
+                        <li><a href="#">MV欣赏</a> </li>
+                        <li><a href="#">生活视屏</a> </li>
+                    </ul>
+                </li>
+                <li><a href="../album.html">相册展示</a>
+                    <ul class="ul">
+                        <li><a href="#">学校的记忆</a> </li>
+                        <li><a href="#">成长的记录</a> </li>
+                        <li><a href="#">旅途的分享</a> </li>
+                    </ul>
+                </li>
+                <li><a href="../../article/article.html">心得文章</a>
+                    <ul class="ul">
+                        <li><a href="#">生活日记</a> </li>
+                        <li><a href="#">吐槽生活</a> </li>
+                        <li><a href="#">个人感想</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">快乐游戏</a>
+                    <ul class="ul"><li><a href="#">单机游戏</a> </li>
+                        <li><a href="#">网络游戏</a> </li>
+                        <li><a href="#">手游</a> </li>
+                        <li><a href="#">网页游戏</a> </li>
+                    </ul>
+                </li>
+                <li><a href="../../food/food.html">美食天地</a>
+                    <ul class="ul">
+                        <li><a href="#">当地小吃</a> </li>
+                        <li><a href="#">个人最爱</a> </li>
+                        <li><a href="#">美食记录</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">运动健康</a>
+                    <ul class="ul">
+                        <li><a href="#">球类运动</a> </li>
+                        <li><a href="#">健身运动</a> </li>
+                        <li><a href="#">休闲养生</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">好友互动</a>
+                    <ul class="ul">
+                        <li><a href="#">哥们走起</a> </li>
+                        <li><a href="#">家乡伙伴</a> </li>
+                        <li><a href="#">红颜倾心</a> </li>
+                    </ul>
+                </li>
+                <li><a href="#">个人商城</a>
+                    <ul class="ul">
+                        <li><a href="#">茶园国度</a> </li>
+                        <li><a href="#">时尚潮圈</a> </li>
+                        <li><a href="#">品牌特价</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div id="mainleft">
+        <ul id="mainleftul">
+            <li onmouseover="one()">旅途风景</li>
+            <li onmouseover="two()">旅途人文</li>
+            <li onmouseover="three()">旅途主人</li>
+        </ul>
+    </div>
+
+    <div id="mainright">
+        <div id="mainrighta">
+            <div id="div1">
+                <img id="imga" src="{{images[0].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div2">
+                <img id="imgb" src="{{images[5].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div3">
+                <img id="imgc" src="{{images[10].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div4">
+                <img id="imgd" src="{{images[15].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div5">
+                <img id="imge" src="{{images[20].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div5left" onclick="myfunca();"><img src="images/ban_next.png" ></div>
+            <div id="div5right" onclick="myfunca();"><img src="images/ban_pre.png"></div>
+        </div>
+        
+        <div id="mainrightb">
+            <div id="div6">
+                <img id="imgf" src="{{images[25].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div7">
+                <img id="imgg" src="{{images[30].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div8">
+                <img id="imgh" src="{{images[35].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div9">
+                <img id="imgj" src="{{images[40].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div10">
+                <img id="imgk" src="{{images[45].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div10left" onclick="myfuncb();"><img src="images/ban_next.png" ></div>
+            <div id="div10right" onclick="myfuncb();"><img src="images/ban_pre.png"></div>
+        </div>
+        <div id="mainrightc">
+            <div id="div11"></div>
+            <div id="div12">
+                    <img id="img" src="{{images[50].address}}" width="100%" height="100%"/>
+            </div>
+            <div id="div13" onclick="myfunc();"><img src="images/ban_next.png" ></div>
+            <div id="div14" onclick="myfunc();"><img src="images/ban_pre.png"></div>
+        </div>
+    </div>
+</div>
+
+<div id="dome">
+    <div id="dome1">
+        <div id="tab1">
+            <ul >
+                <li><img src="../image/1.png"></li>
+                <li><img src="../image/2.png"></li>
+                <li><img src="../image/3.png"></li>
+                <li><img src="../image/4.png"></li>
+                <li><img src="../image/5.png"></li>
+            </ul>
+        </div>
+        <div id="tab2"></div>
+    </div>
+</div>
+
+<a id="chuan" href="../shangchuan.html">上传图片</a>
+   
+<script type="text/javascript">
+
+//        var speed=30
+//        ulb.innerHTML=ula.innerHTML
+//        function Marquee(){
+//            if(mainturn.scrollLeft>=ula.scrollWidth){
+//                mainturn.scrollLeft=0
+//            }else{
+//                mainturn.scrollLeft++
+//            }
+//        }
+//        var MyMar=setInterval(Marquee,speed)
+//        mainturn.onmouseover=function() {clearInterval(MyMar)}
+//        mainturn.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
+        var speed=30;
+      var  tab=document.getElementById("dome");
+       var tab1=document.getElementById("tab1");
+       var tab2=document.getElementById("tab2");
+           tab2.innerHTML=tab1.innerHTML;
+
+
+        function Marquee(){
+            if(tab2.offsetWidth-tab.scrollLeft<=0)
+                tab.scrollLeft-=tab1.offsetWidth
+            else{
+                tab.scrollLeft++
+            }
+        }
+        var MyMar=setInterval(Marquee,speed);
+        tab.onmouseover=function(){clearInterval(MyMar)};
+        tab.onmouseout=function(){MyMar=setInterval(Marquee,speed)};
+
+    </script>
+    <script>
+        var i=51;
+        var a=0;
+        var b=6;
+        var c=11;
+        var d=16;
+        var e=21;
+        var f=26;
+        var g=31;
+        var h=36;
+        var j=41;
+        var k=46;
+
+        var baseUrl = "http://localhost:8000";
+
+        function myfunc()
+        {
+            str=vm.images[i].address;
+            document.getElementById("img").src=str;
+            i++;
+            alert(str.length)
+            if(i==55)
+            {
+                i=51;
+            }
+        }
+
+        function myfunca()
+        {
+            var str=vm.images[a].address;
+            var stra=vm.images[b].address;
+            var strb=vm.images[c].address;
+            var strc=vm.images[d].address;
+            var strd=vm.images[e].address;
+            document.getElementById("imga").src=str;
+            document.getElementById("imgb").src=stra;
+            document.getElementById("imgc").src=strb;
+            document.getElementById("imgd").src=strc;
+            document.getElementById("imge").src=strd;
+            a++;b++;c++;d++;e++;
+            if(a==5||b==10||c==15||d==20||e==25)
+            {
+                a=0;b=5;c=10;d=15;e=20;
+            }
+        }
+
+        function myfuncb()
+        {
+            var strf=vm.images[f].address;
+            var strg=vm.images[g].address;
+            var strh=vm.images[h]. address;
+            var strj=vm.images[j].address;
+            var strk=vm.images[k].address;
+            document.getElementById("imgf").src=strf;
+            document.getElementById("imgg").src=strg;
+            document.getElementById("imgh").src=strh;
+            document.getElementById("imgj").src=strj;
+            document.getElementById("imgk").src=strk;
+            f++;g++;h++;j++;k++;
+            if(f==30||g==35||h==40||j==45||k==50)
+            {
+                f=25;g=30;h=35;j=40;k=45;
+            }
+        }
+        var vm = new Vue({
+            el: '#mainright',
+            data: {
+                /*message: 'welcome to gdg xian',*/
+                images: []
+
+            }
+        });
+
+        function loadpic()
+        {
+            console.log( "getpic" );
+            $.ajax({
+                url: baseUrl + "/getPics",
+                success: function(result){
+                    console.log( result );
+                    //var tempObj = JSON.parse(result);
+                    vm.images = result.data;
+                },
+                error:function(xhr,status,error){
+                    vm.message = "系统出现错误";
+                    console.log("error:" + error);
+                }
+            });
+        }
+
+        loadpic();
+    </script>
+
+</body>
+</html>
